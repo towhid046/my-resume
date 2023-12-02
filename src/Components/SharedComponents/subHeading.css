@@ -1,0 +1,12 @@
+.sub_heading{
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 140px;
+}
+.after_sub_heading{
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary_color);
+}

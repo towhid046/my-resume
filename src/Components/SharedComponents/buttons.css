@@ -1,0 +1,51 @@
+.global_btn_with_border{
+    padding: 13px 23px;
+    border-radius: 5px;
+    color: var(--primary_color);
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    border: 2px solid var(--green_color);
+    background: var(--primary_bg_color);
+    cursor: pointer;
+}
+
+.global_btn_without_border{
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: var(--primary_color);
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: var(--green_color);
+    cursor: pointer;
+}
+
+.sm_btn_with_border{
+    color: var(--secondary_color);
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 6px 14px;
+    border: 2px solid var(--green_color);
+    background: var(--primary_bg_color);
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.sm_btn_without_border{
+    color: var(--primary_color);
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: var(--green_color);
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

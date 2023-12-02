@@ -1,0 +1,169 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, span, button{
+    font-family: 'Lato', sans-serif;
+}
+
+/* colors and fonts variables */
+:root{
+    --primary_color: #fff;
+    --secondary_color: hsla(0,0%,100%,.85);
+    --green_color: #00CF5D;
+    --primary_bg_color: #111A28;
+    --secondary_bg_color: #1d293a;
+}
+/* display flex and grid */
+.flex{
+    display: flex;
+}
+
+.gap_25{
+    gap: 25px;
+}
+.grid{
+    display: grid;
+}
+.jc-c{
+    justify-content: center;
+}
+.jc_sb{
+    justify-content: space-between;
+}
+.ai_c{
+    align-items: center;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.jc-sb{
+    justify-content: space-between;
+}
+
+/* for body */
+body{
+    background-color: var(--primary_bg_color);
+}
+/* for container */
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+/* nav bar component */
+.color_ash{
+    color: var(--secondary_color);
+}
+.color_white {
+    color: var(--primary_color);
+}
+.py_25{
+    padding-top:25px ;
+    padding-bottom: 25px;
+}
+.fz_md{
+    font-size: 1rem;
+}
+.fw_400{
+    font-weight: 400;
+}
+/* sub heading component */
+.fw_900{
+    font-weight: 900;
+}
+.fz_18{
+    font-size: 18px;
+}
+
+.bg_green{
+    color: var(--green_color);
+}
+.bg_color_green{
+    background-color: var(--green_color);
+}
+.bg_secondary{
+   background-color: var(--secondary_bg_color);
+}
+.bg_primary{
+    background-color: var(--primary_bg_color);
+}
+/* hero area css */
+.flex_colmun{
+    flex-direction: column;
+}
+.p_relative{
+    position: relative;
+}
+.fz_22{
+    font-size: 1.375rem;
+}
+.fz_78{
+    font-size: 4.875rem;
+}
+
+.fw_700{
+    font-weight: 700;
+}
+.fz_25{
+    font-size: 25px;
+}
+.mb_30{
+    margin-bottom: 30px;
+}
+
+.gap_20{
+    gap: 20px;
+}
+
+
+.mb_5{
+    margin-bottom: 5px;
+}
+
+.py_100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.br_5{
+    border-radius: 5px;
+}
+.pointer{
+    cursor: pointer;
+}
+.p_5{
+    padding: 5px;
+}
+
+.py_30{
+    padding-top:30px ;
+    padding-bottom:30px ;
+}
+.px_20{
+    padding-left:20px ;
+    padding-right:20px ;
+}
+.p_20{
+    padding: 20px;
+}
+.fz_26{
+    font-size: 26px;
+}
+.mb_20{
+    margin-bottom: 20px;
+}
+.text_center{
+    text-align: center;
+}
+.lh_36{
+    line-height: 36px;
+}
+.py_50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.ml_8{
+    margin-left: 8px;
+}

@@ -1,0 +1,35 @@
+.contact_section_wrapper{
+    grid-template-columns: 45% 40% 15%;
+}
+.contract_head{
+    position: absolute;
+    transform: rotate(90deg);
+    left: 8px;
+    top: 25%;
+}
+
+@media (max-width: 840px) {
+    .contact_section_wrapper{
+        grid-template-columns: 100%;
+        text-align: center;
+        gap: 30px;
+    }
+    .contact_title{
+        order: 2;
+    }
+    .contract_heading_wrapper{
+        margin: 0 auto;
+        order: 1;
+     
+    }
+    .contract_way{
+        order: 3;
+    }
+    .contract_head{
+        position: relative;
+        transform: rotate(0);
+        top: 0;
+        left: 0;
+    }
+
+}

@@ -1,0 +1,26 @@
+.footer_icon{
+    transition: .4s;
+}
+.footer_icon:hover{
+    color: var(--primary_color);
+}
+.footer_thanks{
+    border-bottom: 3px solid var(--green_color);
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+@media (max-width:840px) {
+    .footer_wrapper{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer_icons{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer_right{
+        width: 100%;
+        justify-content: center;
+    }
+}
