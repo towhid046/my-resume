@@ -22,22 +22,25 @@ const Banner = () => {
 
   return (
     <>
-      <div className="hero_area mb_30">
+      <div className="hero_area">
         <header className="container hero_wrapper grid ">
-          <aside className='flex flex_colmun p_relative'>
+          <aside className='banner_asid flex flex_colmun p_relative'>
             <ul className='social_links'>
               {
                 socialLinks.map(link=> (<li key={Math.random() * 100000}><Link to={link.url}>{link.icon}</Link></li>))
               }
             </ul>
+
+            <div className="follow_me_heading p_relative">
             <div className='sub_follow_me'>
                 <SubHeading heading={'follow me'}/>
+            </div>
             </div>
           </aside>
 
           <div className="hero_content">
               <h3 className="fw_400 bg_green fz_22">Hello! I am</h3>
-              <h1 className=" fw_900 fz_78 color_white">Towhid Islam</h1>
+              <h1 className="banner_my_name fw_900 color_white">Towhid Islam</h1>
               <h2 className="fw_700 fz_25 bg_green mb_5">Font end Developer</h2>
               <ul className=" flex ai_c mb_30">
                 {

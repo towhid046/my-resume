@@ -1,0 +1,1 @@
+export const aboutDetails = 'l;askdfpiuasd;f apsoidufpo aspod apsdufoipasdu f '

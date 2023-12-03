@@ -14,6 +14,7 @@
 
 .about_img img{
     transition:.5s ease-in-out;
+    width: 300px;
 }
 .about_img img:hover{
     transform: scale(1.1);
