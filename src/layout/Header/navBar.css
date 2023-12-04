@@ -1,3 +1,12 @@
+.nav_wrapper{
+    overflow: hidden;
+    transition: 0.4s;
+    position: sticky;
+    width: 100%;
+    top: -10px;
+    z-index: 99;
+    scroll-behavior: smooth;
+}
 .logo{
     background-color: var(--green_color);
     font-weight: 700;;
@@ -8,22 +17,7 @@
 }
 
 /* ---------------------- */
-
-  
-/* .nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    background-color: var(--color2);
-    padding: 12px 30px;
-  } 
-   */
-  /* .logo img {
-    width: 40px;
-  } */
+/* hambargur manu */
   
   .menu {
     display: flex;
@@ -41,6 +35,8 @@
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
+    padding-left: 3px;
+    padding-right: 3px;
   }
   
   .menu li a::after {
@@ -100,7 +96,9 @@
       margin-bottom: 15px;
     }
     .menu li a{
-      padding-bottom: 8px;
+      padding: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
 
     .open_menu,

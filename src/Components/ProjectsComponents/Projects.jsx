@@ -60,7 +60,7 @@ const Projects = () => {
   ];
   return (
     <>
-      <div className="py_100">
+      <div id="project" className="py_100">
         <div className="container project_section jc-sb grid gap_25">
           <div className="projects_heading_wrapper p_relative">
             <div className="project_heading">

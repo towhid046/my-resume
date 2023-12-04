@@ -22,7 +22,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className="hero_area">
+      <div id="home" className="hero_area">
         <header className="container hero_wrapper grid ">
           <aside className='banner_asid flex flex_colmun p_relative'>
             <ul className='social_links'>

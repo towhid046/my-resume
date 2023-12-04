@@ -13,7 +13,7 @@ export default function ContactDetails() {
    ]
   return (
     <>
-    <div>
+    <div id="contact">
         <div className="container contact_section_wrapper color_ash grid jc-sb py_100 gap_20">
 
           <div className="contact_title">

@@ -15,7 +15,7 @@ export default function SkillsComponent() {
 
   return (
     <>
-      <div className="skills_section py_30">
+      <div id="skill" className="skills_section py_30">
         <div className="container skills_section_wrapper grid jc-sb">
 
           <div className="pretend p_relative">
