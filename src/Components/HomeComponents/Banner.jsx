@@ -2,9 +2,9 @@ import { FaGithub, FaCodepen, FaLinkedin, } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { Link } from 'react-router-dom';
 import SubHeading from './../SharedComponents/SubHeading';
-import './banner.css'
 import BigBtnWithBorder from "../SharedComponents/BigBtnWithBorder";
 import BigBtnWithoutBorder from "../SharedComponents/BigBtnWithoutBorder";
+import './banner.css'
 
 const Banner = () => {
   const socialLinks = [

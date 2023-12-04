@@ -2,15 +2,17 @@ import SubHeading from "../SharedComponents/SubHeading";
 import SmBtnWithoutBorder from "./../SharedComponents/SmBtnWithoutBorder";
 import SmBtnWithBorder from "./../SharedComponents/SmBtnWithBorder";
 import "./skills.css";
+
 export default function SkillsComponent() {
+
   const skills = [
     { title: "HTML", percentage: "40%", wid40: {width: '50%'} },
-    { title: "JavaScript", percentage: "20%", wid40: {width: '20%'}  },
+    { title: "CSS", percentage: "20%", wid40: {width: '20%'}  },
     { title: "JavaScript", percentage: "40%", wid40: {width: '50%'}  },
-    { title: "JavaScript", percentage: "40%", wid40: {width: '50%'}  },
-    { title: "JavaScript", percentage: "10%", wid40: {width: '10%'}  },
-    { title: "JavaScript", percentage: "40%", wid40: {width: '20%'}  },
-    { title: "Javacript", percentage: "70%", wid40: {width: '70%'}  },
+    { title: "React", percentage: "40%", wid40: {width: '50%'}  },
+    { title: "XML", percentage: "10%", wid40: {width: '10%'}  },
+    { title: "SVG", percentage: "40%", wid40: {width: '20%'}  },
+    { title: "Bootstrap", percentage: "70%", wid40: {width: '70%'}  },
   ];
 
   return (

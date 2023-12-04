@@ -3,10 +3,11 @@ import SmBtnWithoutBorder from "./../SharedComponents/SmBtnWithoutBorder";
 import SmBtnWithBorder from "./../SharedComponents/SmBtnWithBorder";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { FaGithub } from "react-icons/fa";
-
 import './Projects.css'
 import BigBtnWithBorder from './../SharedComponents/BigBtnWithBorder';
+
 const Projects = () => {
+  
   const projects = [
     {
       imgUrl:"https://images.pexels.com/photos/1190906/pexels-photo-1190906.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -58,6 +59,7 @@ const Projects = () => {
     },
    
   ];
+
   return (
     <>
       <div id="project" className="py_100">

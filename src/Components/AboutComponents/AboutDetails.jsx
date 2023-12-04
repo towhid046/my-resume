@@ -2,18 +2,26 @@ import BigBtnWithoutBorder from "./../SharedComponents/BigBtnWithoutBorder";
 import BigBtnWithBorder from "./../SharedComponents/BigBtnWithBorder";
 import "./aboutSection.css";
 import { useRef } from "react";
-import { abouts } from "./../../DATABASE/about.js";
 import SubHeading from "./../SharedComponents/SubHeading";
 
-
-
 export default function AboutDetails() {
+
+  const abouts = [
+    {
+      details:"Hello! I'm Towhid Islam, a passionate Web Developer. I develop web applications, mobile applications, and desktop applications. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I love to make the web more open to the world. I have graduated with a bachelor's degree in Computer Science Engineering from Chandigarh University at Punjab, India in 2020. I am available for any kind of job opportunity that suits my interests.",
+      imgUrl: "https://i.ibb.co/X5Zfhcb/IMG-20220920-WA0001-02-EDIT.jpg",
+    },
+  ];
+
+
   const iffImg = useRef(null);
+
   const onHoverImgHandelar = () => {
     if (iffImg.current)
       iffImg.current.src =
         "https://i.ibb.co/Ss0fr0v/IMG-20220920-WA0001-02-EDIT-EDIT.jpg";
   };
+
   const handleMouseOut = () => {
     if (iffImg.current)
       iffImg.current.src =
@@ -48,7 +56,7 @@ export default function AboutDetails() {
           ))}
           <div className="p_relative about_heading_wrapper">
             <div className="about_heading ">
-              <SubHeading heading={'About me'} />
+              <SubHeading heading={"About me"} />
             </div>
           </div>
         </div>

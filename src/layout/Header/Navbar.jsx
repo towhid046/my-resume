@@ -2,11 +2,24 @@ import "./navBar.css";
 import { IoClose } from "react-icons/io5";
 import { LuMenu } from "react-icons/lu";
 import SmBtnWithBorder from "../../Components/SharedComponents/SmBtnWithBorder";
-import { manuItems, logo } from "./../../DATABASE/navbar.js";
+
 const NavBar = () => {
+
+  // logo:
+const logo = "T";
+
+// Menu:
+const manuItems = [
+  { title: "Home", url: "#" },
+  { title: "About", url: "#about" },
+  { title: "Skill", url: "#skill" },
+  { title: "Project", url: "#project" },
+  { title: "Contact", url: "#contact" },
+];
+
   return (
     <>
-      <div className="nav_wrapper py_25 bg_secondary">
+      <div className="nav_wrapper py_25 bg_primary">
         <div className="container">
           <div className="nav_bar flex jc_sb ai_c p_relative">
             <div className="logo">

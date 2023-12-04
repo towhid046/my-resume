@@ -28,9 +28,8 @@ export default function Footer() {
             <h3 className="fw_900 fz_18">
               BY ME
               <span className="pointer bg_color_green p_5 color_ash br_5 ml_8">
-                <a href="#">
-                  <IoIosArrowUp />
-                </a>
+                
+                  <a href="#"><IoIosArrowUp /></a>
               </span>
             </h3>
           </div>
