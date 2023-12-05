@@ -34,6 +34,7 @@ export default function Footer() {
             </h3>
           </div>
         </div>
+          <p className="text_center copy_rigth">All Right reserve by @Towhid Islam</p>
       </footer>
     </>
   );

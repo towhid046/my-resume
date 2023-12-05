@@ -23,4 +23,7 @@
         width: 100%;
         justify-content: center;
     }
+    .copy_rigth{
+        margin-top: 10px;
+    }
 }
