@@ -5,7 +5,7 @@
 .about_heading{
     transform: rotate(90deg);
     position: absolute;
-    right: 0;
+    left :-15px;
     top: 40%;
 }
 .about_content{
