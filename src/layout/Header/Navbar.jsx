@@ -6,12 +6,18 @@ import SmBtnWithBorder from "../../Components/SharedComponents/SmBtnWithBorder";
 
 const NavBar = () => {
   const [isChecked, setChecked] = useState(false);
+  const [isActiveItem, setIsActiveItem] = useState(null);
 
   const toggleMenu = () => {
     setChecked(!isChecked);
   };
 
-  // logo:
+  // setActiveItem:
+  const handleMenuItemClick = (index) => {
+    setIsActiveItem(index)
+    setChecked(false)
+  }
+   // logo:
   const logo = "T";
 
   // Menu:
@@ -23,6 +29,7 @@ const NavBar = () => {
     { title: "Contact", url: "#contact" },
   ];
 
+
   return (
     <>
       <div className="nav_wrapper py_25 bg_primary">
@@ -33,13 +40,14 @@ const NavBar = () => {
             </div>
             <div className="">
               <input type="checkbox" id="check" checked={isChecked} onChange={toggleMenu} />
-              <ul className="menu  flex gap_20 color_ash fw_400 ai_c">
-                {menuItems.map((item) => (
-                  <li key={Math.random() * 10000000}>
+              <ul className="menu  flex color_ash fw_400 ai_c">
+                {menuItems.map((item, index) => (
+                  <li  key={Math.random() * 10000000}>
                     <a
-                      className="py_10"
+                      className={`py_10 ${isActiveItem === index ? 'active_item' : ''}`}
                       href={item.url}
-                      onClick={() => setChecked(false)}
+                      onClick={() => handleMenuItemClick(index)}
+                      style={{padding: '10px 10px'}}
                     >
                       {item.title.toUpperCase()}
                     </a>
