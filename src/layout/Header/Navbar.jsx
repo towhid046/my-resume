@@ -3,10 +3,12 @@ import "./navBar.css";
 import { IoClose } from "react-icons/io5";
 import { LuMenu } from "react-icons/lu";
 import SmBtnWithBorder from "../../Components/SharedComponents/SmBtnWithBorder";
-import {navData} from './../../database/navbar';
-const {logo, menuItems, resumeLink} = navData;
+import { navData } from "./../../database/navbar";
+import { Link } from 'react-router-dom';
+const { logo, menuItems, resumeLink } = navData;
 
 const NavBar = () => {
+  console.log(resumeLink)
   const [isChecked, setChecked] = useState(false);
   const [isActiveItem, setIsActiveItem] = useState(null);
 
@@ -16,9 +18,9 @@ const NavBar = () => {
 
   // setActiveItem:
   const handleMenuItemClick = (index) => {
-    setIsActiveItem(index)
-    setChecked(false)
-  }
+    setIsActiveItem(index);
+    setChecked(false);
+  };
 
   return (
     <>
@@ -30,15 +32,22 @@ const NavBar = () => {
             </div>
 
             <div className="">
-              <input type="checkbox" id="check" checked={isChecked} onChange={toggleMenu} />
+              <input
+                type="checkbox"
+                id="check"
+                checked={isChecked}
+                onChange={toggleMenu}
+              />
               <ul className="menu  flex color_ash fw_400 ai_c">
                 {menuItems.map((item, index) => (
-                  <li  key={Math.random() * 10000000}>
+                  <li key={Math.random() * 10000000}>
                     <a
-                      className={`py_10 ${isActiveItem === index ? 'active_item' : ''}`}
+                      className={`py_10 ${
+                        isActiveItem === index ? "active_item" : ""
+                      }`}
                       href={item.url}
                       onClick={() => handleMenuItemClick(index)}
-                      style={{padding: '10px 10px'}}
+                      style={{ padding: "10px 10px" }}
                     >
                       {item.title.toUpperCase()}
                     </a>
@@ -46,10 +55,7 @@ const NavBar = () => {
                 ))}
 
                 <li>
-                  <SmBtnWithBorder 
-                  btnName="Resume" 
-                  link={resumeLink}
-                  />
+                  <Link target="_blank" to={resumeLink} > <SmBtnWithBorder btnName='Resume' /></Link>
                 </li>
 
                 <label htmlFor="check" className="close_menu">
@@ -60,7 +66,6 @@ const NavBar = () => {
                 <LuMenu />
               </label>
             </div>
-
           </div>
         </div>
       </div>

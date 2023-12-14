@@ -46,8 +46,8 @@
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
-    padding-left: 3px;
-    padding-right: 3px;
+    /* padding-left: 3px;
+    padding-right: 3px; */
   }
   
   .menu li a::after {

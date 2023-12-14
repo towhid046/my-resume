@@ -11,4 +11,5 @@
    ];
  
    const resumeLink = 'https://docs.google.com/document/d/10npWTz3RtNMcPBce_5CSHMXQDyGhuyZm-rW1vkJlqnM/edit?usp=sharing'
+   
  export const navData = {logo, menuItems, resumeLink}

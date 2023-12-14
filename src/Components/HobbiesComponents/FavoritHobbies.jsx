@@ -1,15 +1,11 @@
 import SubHeading from "./../SharedComponents/SubHeading";
-import { IoBicycle } from "react-icons/io5";
+import { skillData } from "../../database/SkillData";
 import "./favoritHobbies.css";
 
 export default function FavoritHobbies() {
 
-  const hobbies = [
-    { icon: <IoBicycle />, title: "Cycling" },
-    { icon: <IoBicycle />, title: "Cycling" },
-    { icon: <IoBicycle />, title: "Cycling" },
-    { icon: <IoBicycle />, title: "Cycling" },
-  ];
+  const {hobbies} = skillData
+
   return (
     <>
       <div className="hobbies_section py_100">
