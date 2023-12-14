@@ -3,6 +3,8 @@ import "./navBar.css";
 import { IoClose } from "react-icons/io5";
 import { LuMenu } from "react-icons/lu";
 import SmBtnWithBorder from "../../Components/SharedComponents/SmBtnWithBorder";
+import {navData} from './../../database/navbar';
+const {logo, menuItems, resumeLink} = navData;
 
 const NavBar = () => {
   const [isChecked, setChecked] = useState(false);
@@ -17,18 +19,6 @@ const NavBar = () => {
     setIsActiveItem(index)
     setChecked(false)
   }
-   // logo:
-  const logo = "T";
-
-  // Menu:
-  const menuItems = [
-    { title: "Home", url: "#" },
-    { title: "About", url: "#about" },
-    { title: "Skill", url: "#skill" },
-    { title: "Project", url: "#project" },
-    { title: "Contact", url: "#contact" },
-  ];
-
 
   return (
     <>
@@ -38,6 +28,7 @@ const NavBar = () => {
             <div className="logo">
               <a href="#">{logo}</a>
             </div>
+
             <div className="">
               <input type="checkbox" id="check" checked={isChecked} onChange={toggleMenu} />
               <ul className="menu  flex color_ash fw_400 ai_c">
@@ -53,9 +44,14 @@ const NavBar = () => {
                     </a>
                   </li>
                 ))}
+
                 <li>
-                  <SmBtnWithBorder btnName={"Resume"} />
+                  <SmBtnWithBorder 
+                  btnName="Resume" 
+                  link={resumeLink}
+                  />
                 </li>
+
                 <label htmlFor="check" className="close_menu">
                   <IoClose />
                 </label>
@@ -64,6 +60,7 @@ const NavBar = () => {
                 <LuMenu />
               </label>
             </div>
+
           </div>
         </div>
       </div>
