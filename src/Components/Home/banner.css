@@ -1,0 +1,54 @@
+.hero_wrapper{
+    grid-template-columns: 8% 92%;
+}
+.social_links{
+    color: var(--secondary_color);
+}
+.social_links li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+ .sub_follow_me{
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -12%;
+    top: 80px ;
+}
+.hero_area{
+    padding: 80px 0;
+}
+.banner_my_name{
+    font-size: 78px;
+}
+.hero_content h1{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 840px) {
+    .hero_wrapper{
+        grid-template-columns: auto;
+    }
+    .follow_me_heading{
+        margin: 0 auto 20px auto;
+    }
+    .sub_follow_me{
+        transform: rotate(0);
+        position: relative;
+        left: 0;
+        top:0;
+    }
+    .social_links li{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .social_links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        order: 2;
+    }
+    .banner_my_name{
+        font-size: 52px;
+    }
+}

@@ -89,7 +89,6 @@
   #check {
     display: none;
   }
-  
   @media (max-width: 840px) {
     .menu {
       flex-direction: column;
