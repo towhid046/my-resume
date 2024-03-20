@@ -4,14 +4,11 @@ import { IoClose } from "react-icons/io5";
 import { LuMenu } from "react-icons/lu";
 import SmBtnWithBorder from "../../SharedComponents/SmBtnWithBorder";
 import { navData } from "./../../database/navbar";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import scrollToTop from "../../SharedComponents/scrollToTop";
 const { logo, menuItems, resumeLink } = navData;
 
-
 const Navbar = () => {
-
-  
   const [isChecked, setChecked] = useState(false);
   const [isActiveItem, setIsActiveItem] = useState(0);
 
@@ -21,11 +18,15 @@ const Navbar = () => {
 
   // function to scroll top:
 
-
   // setActiveItem:
   const handleMenuItemClick = (index) => {
     setIsActiveItem(index);
     setChecked(false);
+    scrollToTop();
+  };
+
+  const callTwoFunction = () => {
+    setIsActiveItem(0);
     scrollToTop();
   };
 
@@ -35,7 +36,9 @@ const Navbar = () => {
         <div className="container">
           <div className="nav_bar flex jc_sb ai_c p_relative">
             <div className="logo">
-              <Link onClick={scrollToTop} to="/">{logo}</Link>
+              <Link onClick={callTwoFunction} to="/">
+                {logo}
+              </Link>
             </div>
 
             <div className="">
