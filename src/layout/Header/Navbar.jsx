@@ -35,11 +35,11 @@ const Navbar = () => {
       <div className="nav_wrapper py_25 bg_primary">
         <div className="container">
           <div className="nav_bar flex jc_sb ai_c p_relative">
-            <div className="logo">
-              <Link onClick={callTwoFunction} to="/">
+            <Link to='/'  onClick={callTwoFunction} className="logo">
+              <span>
                 {logo}
-              </Link>
-            </div>
+              </span>
+            </Link>
 
             <div className="">
               <input
